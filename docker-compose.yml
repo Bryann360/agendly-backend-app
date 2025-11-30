@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: agendly
+      POSTGRES_USER: agendly
+      POSTGRES_PASSWORD: agendly
+    ports:
+      - "5432:5432"
+    volumes:
+      - agendly_pg:/var/lib/postgresql/data
+
+volumes:
+  agendly_pg:

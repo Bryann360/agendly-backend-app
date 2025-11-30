@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/agendly
+    username: agendly
+    password: agendly
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+agendly:
+  dev:
+    seed: true
+  security:
+    jwt-secret: "super-secret-key-absolut-varzea-products"
+  billing:
+    platform-fee-bps: 800   # 8%
+    merchant-default-trial-days: 14
+    allow-free-subscriptions: true # beta: activate client subscription without charging
