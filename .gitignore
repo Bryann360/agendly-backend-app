@@ -1,0 +1,40 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven
+target/
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Java / Kotlin
+*.class
+*.war
+*.ear
+*.jar
+
+# Others
+out/
+bin/
+tmp/
+*.swp
+*.swo
